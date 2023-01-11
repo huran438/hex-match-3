@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62520dcad80d4bbebcb06c3eb2110839, type: 3}
+  m_Name: settings_game
+  m_EditorClassIdentifier: 
+  _cellPrefab: {fileID: 2671051237577451174, guid: b95505c731424c68b73502ef83722861, type: 3}
+  _pawnPrefab: {fileID: 3861693849167082780, guid: da767b1820d3c4d19a8d7c25a7d23054, type: 3}
+  hexLayout:
+    _orientationIsFlat: 0
+    _size: {x: 0.5, y: 0.5}
+    _origin: {x: 0.75, y: 0}
+  _gridRect:
+    Left: -4
+    Right: 4
+    Top: -8
+    Bottom: 8
+  _initialPawns: 25
+  _pawnGenerationTimeout: 7
+  _dragRadius: 0.425
+  _pawnTypeProbabilities:
+  - Name: 90%
+    Probability: 0.9
+    PawnType:
+      Sprite: 
+      BackgroundSprite: 
+  - Name: 10%
+    Probability: 0.1
+    PawnType:
+      Sprite: Assets/_Client_/Sprites/sprite_flag.jpg
+      BackgroundSprite: Assets/_Client_/Sprites/sprite_hex_body_01.png
+  _pawnsData:
+  - defaultColor: '#97B5FF'
+    chainColor: '#0000FF'
+  - defaultColor: '#83FF83'
+    chainColor: '#008E00'
+  - defaultColor: '#767676'
+    chainColor: '#000000'
+  - defaultColor: '#CAAB8C'
+    chainColor: '#784600'
+  - defaultColor: '#EBA0FF'
+    chainColor: '#76009C'
+  - defaultColor: '#FFA3A3'
+    chainColor: '#FF0000'
+  - defaultColor: '#FCFFAC'
+    chainColor: '#FFDB00'
+  - defaultColor: '#AAFFFE'
+    chainColor: '#00FFFF'
+  _swapDuration: 0.1
+  _pawnScale: {x: 0.6, y: 0.6, z: 0.6}
+  _draggedPawnScale: {x: 1.3, y: 1.3, z: 1.3}
+  _maxMoraleAmount: 3000
+  _pawnsMatchingFormula: 5 * [COUNT] * Sqrt([COUNT] - 3)
+  _pawnsTypeMatchingFormula: Pow(2,[COUNT] - 1)
